@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/shope/static/css/main.ace54370.css",
+    "main.js": "/shope/static/js/main.3693c54d.js",
+    "static/media/889.jpg": "/shope/static/media/889.020338c88b655cf23a89.jpg",
+    "static/media/asd.png": "/shope/static/media/asd.1b21e9f06255ae3fda8f.png",
+    "static/media/05_11_2024 05_42_13 م.png": "/shope/static/media/05_11_2024 05_42_13 م.1adaa6aab33f77dcaa0f.png",
+    "static/media/882.png": "/shope/static/media/882.75b9ce0e6c4ed9a1bf6c.png",
+    "static/media/f98aed88a.png": "/shope/static/media/f98aed88a.f192a97c1e9daffe06da.png",
+    "static/media/888.png": "/shope/static/media/888.0a6f4271f1f8bc138e6a.png",
+    "static/media/1.png": "/shope/static/media/1.6880b5fff9e2ac14421e.png",
+    "static/media/881.png": "/shope/static/media/881.c9b630e33d000901c7c5.png",
+    "static/media/ffe267.png": "/shope/static/media/ffe267.db3cb55e47d29ce6e2f0.png",
+    "static/media/22.jpg": "/shope/static/media/22.ea3d95a4fcd8ae879dba.jpg",
+    "static/media/7م.png": "/shope/static/media/7م.adb6608bbcd95f5432ff.png",
+    "static/media/5.png": "/shope/static/media/5.bde4443c574c6a2150a4.png",
+    "static/media/6م.png": "/shope/static/media/6م.988d36cadf124650654d.png",
+    "static/media/f8e8.png": "/shope/static/media/f8e8.14f16ab3ae0f528fd822.png",
+    "static/media/8bf7ea6.png": "/shope/static/media/8bf7ea6.5da268f5c14dbe7f3b37.png",
+    "static/media/3.jpg": "/shope/static/media/3.24f0a0221bcdc976f05f.jpg",
+    "static/media/2.png": "/shope/static/media/2.5f3c06573eb23cf0af15.png",
+    "static/media/9038.jpg": "/shope/static/media/9038.93952a06882fa06fe46e.jpg",
+    "static/media/slick.svg": "/shope/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/shope/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/shope/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/shope/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/shope/index.html",
+    "main.ace54370.css.map": "/shope/static/css/main.ace54370.css.map",
+    "main.3693c54d.js.map": "/shope/static/js/main.3693c54d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ace54370.css",
+    "static/js/main.3693c54d.js"
+  ]
+}
