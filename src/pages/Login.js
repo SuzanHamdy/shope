@@ -149,75 +149,8 @@ const Login = () => {
     if (storedUser.email === user.email && storedUser.password === user.password) {
       setIsLoggedIn(true);
       navigate("/home");
-      document.getElementById("userPg").innerHTML =`
-       <IconButton
-              size="large"
-              aria-label="show 4 new mails"
-              color="inherit"
-            >
-              <Badge badgeContent={state.length} color="error">
-                <FavoriteBorderIcon
-                  onClick={() => {
-                    navigate("/WishList");
-                  }}
-                />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              aria-label="show 17 new notifications"
-              color="inherit"
-            >
-              <Badge badgeContent={ item.length }  color="error">
-                <ShoppingCartOutlinedIcon
-                  onClick={() => {
-                    navigate("/cart");
-                  }}
-                />
-              </Badge>
-            </IconButton>
-            <IconButton
-              size="large"
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <AccountCircle />
-            </IconButton>
-      
-      
-      
-      `
-      document.getElementById("userPage").innerHTML=`
-      <IconButton size="small" aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={state.length} color="error">
-            <FavoriteBorderIcon />
-          </Badge>
-        </IconButton>
-        <IconButton
-          size="small"
-          aria-label="show 17 new notifications"
-          color="inherit"
-        >
-          <Badge badgeContent={ item.length   }  color="error">
-            <ShoppingCartOutlinedIcon />
-          </Badge>
-        </IconButton>
-        <IconButton
-          size="small"
-          aria-label="account of current user"
-          color="inherit"
-          onClick={handleProfileMenuOpen}
-        >
-          <PermIdentityRoundedIcon />
-        </IconButton>
-      
-      
-      
-      `
+      document.getElementById("userPg").style.visibility=" visible";
+      document.getElementById("userPage").style.visibility=" visible";
     
     } else {
       alert("Invalid credentials");

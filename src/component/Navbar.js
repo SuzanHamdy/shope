@@ -130,7 +130,28 @@ const [searchTerm, setSearchTerm] = useState("")
       onClose={handleMobileMenuClose}
     >
       <Box sx={{visibility:"hidden" }}   id="userPage">
-        
+      <IconButton size="small" aria-label="show 4 new mails" color="inherit">
+          <Badge badgeContent={state.length} color="error">
+            <FavoriteBorderIcon />
+          </Badge>
+        </IconButton>
+        <IconButton
+          size="small"
+          aria-label="show 17 new notifications"
+          color="inherit"
+        >
+          <Badge badgeContent={ item.length   }  color="error">
+            <ShoppingCartOutlinedIcon />
+          </Badge>
+        </IconButton>
+        <IconButton
+          size="small"
+          aria-label="account of current user"
+          color="inherit"
+          onClick={handleProfileMenuOpen}
+        >
+          <PermIdentityRoundedIcon />
+        </IconButton>
       </Box>
       <Box sx={{ p: "5px 30px" }}>
         <NavLink className="nav" to="/Home">
@@ -233,7 +254,44 @@ className="Input" placeholder=" What are you looking for?"  />
 
 
           <Box sx={{visibility:"hidden",display :{xs:"none",md:"flex"} }} id="userPg">
-           
+          <IconButton
+              size="large"
+              aria-label="show 4 new mails"
+              color="inherit"
+            >
+              <Badge badgeContent={state.length} color="error">
+                <FavoriteBorderIcon
+                  onClick={() => {
+                    navigate("/WishList");
+                  }}
+                />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              aria-label="show 17 new notifications"
+              color="inherit"
+            >
+              <Badge badgeContent={ item.length }  color="error">
+                <ShoppingCartOutlinedIcon
+                  onClick={() => {
+                    navigate("/cart");
+                  }}
+                />
+              </Badge>
+            </IconButton>
+            <IconButton
+              size="large"
+              edge="end"
+              aria-label="account of current user"
+              aria-controls={menuId}
+              aria-haspopup="true"
+              onClick={handleProfileMenuOpen}
+              color="inherit"
+            >
+              <AccountCircle />
+            </IconButton>
+      
           </Box>
 
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
