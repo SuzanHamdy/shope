@@ -1,13 +1,154 @@
-body {
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  transition: all 1s;
+  text-transform:capitalize !important;
+}
+.space{
+  width: 100%;
+  height: 150px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+.nav{
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 1s;
 }
+.nav:focus{
+  color: #000;
+  text-decoration:underline;
+  font-weight: bolder;
+}
+.TextField::placeholder{
+  color: white;
+}
+
+
+.media{
+display: flex;
+justify-content: center;
+align-items: center;
+  flex-wrap: wrap;
+  margin-left: 10px;
+ 
+ 
+}
+
+/* products */
+.button{
+  display: none;
+
+}
+.form{
+  width: 300px;
+  border: 1px solid red;
+  padding: 6px  10px;
+  border-radius: 20px;
+}
+.Input{
+  width: 90%;
+border: none;
+outline: none;
+}
+
+
+
+.slick-arrow.slick-prev{
+  padding: 20px  45px;
+  font-size: 40px;
+  top :-26%;
+  left: 43%;
+  text-align: center;
+  display: inline-block;
+
+} 
+ .slick-arrow.slick-next{
+  padding: 20px 45px;
+  font-size: 40px;
+  top :-26%;
+ right:43%;
+ text-align: center;
+display: inline-block;
+
+}
+
+
+
+
+
+
+
+
+@media (max-width :1000px) {
+  .slick-arrow.slick-prev{
+    top :-24%;
+    left: 36%;
+  } 
+  
+   .slick-arrow.slick-next{
+    top :-24%;
+   right:39%;
+
+  }
+  
+}
+
+@media (max-width :700px) {
+  .slick-arrow.slick-prev{
+    top :-25%;
+    left: 33%;
+    padding: 25px ;
+  } 
+  
+   .slick-arrow.slick-next{
+    top :-25%;
+   right:30%;
+   padding: 20px 30px;
+
+  }
+  
+ 
+}
+@media (max-width :500px) {
+  .slick-arrow.slick-prev{
+    top :-24%;
+    left: 30%;
+    padding: 20px ;
+    font-size: 25px;
+  } 
+  
+   .slick-arrow.slick-next{
+    top :-24%;
+   right:24%;
+   padding: 20px 30px;
+   font-size: 25px;
+  }
+  
+}
+
+@media (max-width :370px) {
+  .slick-arrow.slick-prev{
+    top :-25%;
+    left: 50px;
+    padding: 20px ;
+    font-size: 20px;
+  } 
+  
+   .slick-arrow.slick-next{
+    top :-25%;
+   right:50px;
+   padding: 20px;
+   font-size: 20px;
+  }
+  
+}
+
+
+
