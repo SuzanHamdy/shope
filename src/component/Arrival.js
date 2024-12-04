@@ -117,7 +117,7 @@ width :"520px",
   <Stack     spacing={{ xs: 1, sm: 2 }}
   direction="row"
   useFlexGap
-  sx={{ flexWrap: 'wrap' , bgcolor:"white"}}>
+  sx={{ flexWrap: 'wrap' , bgcolor:"white",position: "relative"}}>
   <Item sx={{
     backgroundImage:`url(${Speak})`,
     backgroundPosition: "''center',",
