@@ -43,6 +43,11 @@ const Arrival = () => {
         </Typography>
         <h2>Explore Our Products</h2><br/><br/>
         <Shope/>
+
+
+
+
+
         <Box sx={{display:"flex",justifyContent:"center" ,alignItems:"center" }}>
  <Button  variant="danger" style={{fontSize:"25px"}}
    onClick={()=>{navigate("/allProducts")}}>
@@ -66,11 +71,15 @@ const Arrival = () => {
          Featured
         </Typography>
         <h2>New Arrival</h2><br/><br/>
+
+
+
+
         <Stack
   spacing={{ xs: 1, sm: 2 }}
   direction="row"
   useFlexGap
-  sx={{ flexWrap: 'wrap' , bgcolor:"white"}}
+  sx={{ flexWrap: 'wrap' , bgcolor:"white" ,position: "relative"}}
 >
   <Item sx={{
     backgroundImage:`url(${bg})`,
@@ -79,6 +88,7 @@ const Arrival = () => {
     backgroundRepeat: "no-repeat",
     height :"83vh",
 width :"540px",
+position: "relative"
   }}>
    <Typography variant="body1" sx={{ p:"10px",position:"absolute" , bottom:"5px" , left:"8px" ,cursor:"pointer"}}>
    <Typography>PlayStation 5</Typography>
