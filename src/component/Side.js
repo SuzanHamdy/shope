@@ -1,6 +1,6 @@
 import Phone from "../assets/Frame 563.png";
 import EastIcon from "@mui/icons-material/East";
-import Phonee from "../assets/22.jpg";
+import Phoned from "../assets/22.jpg";
 import {  useNavigate } from 'react-router-dom';
 import {
   Box,
@@ -107,7 +107,7 @@ function Side() {
             </Button>
           </Box>
           <Box sx={{ width: "40%" }}>
-            <img src={Phonee} alt="Phone" width=" 100%" height="400px" />
+            <img src={Phoned} alt="Phone" width=" 100%" height="400px" />
           </Box>
         </Container>
       </Box>

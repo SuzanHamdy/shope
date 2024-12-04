@@ -95,6 +95,7 @@ width :"540px",
     backgroundRepeat: "no-repeat",
     height :"40vh",
 width :"520px",
+   position:"relative"
   }}>
    <Typography variant="body1" sx={{ p:"10px",position:"absolute" , bottom:"5px" , left:"8px" ,cursor:"pointer"}}>
    <Typography>Women's Collections</Typography>
@@ -114,6 +115,7 @@ width :"520px",
     backgroundRepeat: "no-repeat",
     height :"40vh",
     width :"260px",
+       position:"relative"
   }}>
    <Typography variant="body1" sx={{ p:"10px",position:"absolute" , bottom:"5px" , left:"8px" ,cursor:"pointer"}}>
    <Typography>Speakers</Typography>
@@ -129,6 +131,7 @@ width :"520px",
     backgroundRepeat: "no-repeat",
     height :"40vh",
     width :"250px",
+    position:"relative"
   }}>
    <Typography variant="body1" sx={{ p:"10px",position:"absolute" , bottom:"5px" , left:"8px" ,cursor:"pointer"}}>
    <Typography>Perfume</Typography>
@@ -148,5 +151,3 @@ width :"520px",
 
 export default Arrival
 
-// 
-// 

@@ -161,7 +161,7 @@ const Shope2 = () => {
                  <Button
                     id="button"
                     variant="contained"
-                    sx={{ display: "none", flexWrap: "wrap", bgcolor: "black" }}
+                    sx={{ display: "none", flexWrap: "wrap", bgcolor: "black", width:"100%" }}
                     onClick={() => {
                       if (storedUser) {
                         navigate(`/Products/${product.id}`);

@@ -1,3 +1,4 @@
+
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
@@ -75,10 +76,7 @@ const Shope = () => {
     );
   };
 
- const filterProduct = (cat) => {
-    const updateList = data.filter((x) => x.category === cat);
-    setData(updateList);
-  };
+
   const Show = () => {
     return (
       <>
@@ -164,6 +162,7 @@ const Shope = () => {
                         display: "none",
                         flexWrap: "wrap",
                         bgcolor: "black",
+                         width:"100%"
                       }}
                       onClick={() => {
                         if (storedUser) {
@@ -204,7 +203,7 @@ const Shope = () => {
     <Container>
       <br />
       <br />
-      <Button onClick={()=>{filterProduct( "men's clothing")}}>Text</Button>
+    
       {loading ? <Loading /> : <Show />}
     </Container>
   );
