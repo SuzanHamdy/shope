@@ -64,8 +64,8 @@ visibility: visible;
 .slick-arrow.slick-prev{
   padding: 20px  45px;
   font-size: 40px;
-  top :-26%;
-  left: 43%;
+  top :-24%;
+  left: 40%;
   text-align: center;
   display: inline-block;
 
@@ -73,8 +73,8 @@ visibility: visible;
  .slick-arrow.slick-next{
   padding: 20px 45px;
   font-size: 40px;
-  top :-26%;
- right:43%;
+  top :-24%;
+ right:40%;
  text-align: center;
 display: inline-block;
 
@@ -90,12 +90,12 @@ display: inline-block;
 @media (max-width :1000px) {
   .slick-arrow.slick-prev{
     top :-24%;
-    left: 36%;
+    left: 28%;
   } 
   
    .slick-arrow.slick-next{
     top :-24%;
-   right:39%;
+   right:28%;
 
   }
   
@@ -105,30 +105,39 @@ display: inline-block;
   .slick-arrow.slick-prev{
     top :-25%;
     left: 33%;
-    padding: 25px ;
+  
   } 
   
    .slick-arrow.slick-next{
     top :-25%;
    right:30%;
-   padding: 20px 30px;
+ 
 
   }
-  
+  .form{
+    width: 250px;
+
+    padding: 3px  ;
+
+  }
+  .Input{
+    width: 80%;
+
+  }
  
 }
 @media (max-width :500px) {
   .slick-arrow.slick-prev{
     top :-24%;
-    left: 30%;
-    padding: 20px ;
+    left: 16%;
+
     font-size: 25px;
   } 
   
    .slick-arrow.slick-next{
     top :-24%;
-   right:24%;
-   padding: 20px 30px;
+   right:16%;
+
    font-size: 25px;
   }
   
@@ -137,15 +146,15 @@ display: inline-block;
 @media (max-width :370px) {
   .slick-arrow.slick-prev{
     top :-25%;
-    left: 50px;
-    padding: 20px ;
+    left: -25px;
+  
     font-size: 20px;
   } 
   
    .slick-arrow.slick-next{
     top :-25%;
-   right:50px;
-   padding: 20px;
+   right:-26px;
+ 
    font-size: 20px;
   }
   

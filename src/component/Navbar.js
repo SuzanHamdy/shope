@@ -32,7 +32,7 @@ import { Search } from '@mui/icons-material';
 
 
 export default function Navbar() {
-
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(!!localStorage.getItem('user'));
 const [searchTerm, setSearchTerm] = useState("")
 
   const item = useSelector((state) => state.cart) || []; 
@@ -59,10 +59,13 @@ const [searchTerm, setSearchTerm] = useState("")
   const handleMobileMenuOpen = (event) => {
     setMobileMoreAnchorEl(event.currentTarget);
   };
-
+  // const storedUser = JSON.parse(localStorage.getItem("user"));
   const handleLogout = () => {
-    localStorage.removeItem("user");
-
+    localStorage.removeItem('user');
+    setIsUserLoggedIn(false); 
+    navigate('/login'); 
+    document.getElementById("userPg").style.visibility="hidden ";
+    document.getElementById("userPage").style.visibility="hidden";
     handleMenuClose();
   };
   const menuId = "primary-search-account-menu";
@@ -85,13 +88,15 @@ const [searchTerm, setSearchTerm] = useState("")
       <MenuItem
         onClick={() => {
           navigate("/account");
+          handleMenuClose()
         }}
       >
         <PermIdentityRoundedIcon /> Manage My Account
       </MenuItem>
       <MenuItem
         onClick={() => {
-          navigate("/order");
+          navigate("/CheckOut");
+          handleMenuClose()
         }}
       >
         <LocalMallOutlinedIcon /> My Order
@@ -102,6 +107,7 @@ const [searchTerm, setSearchTerm] = useState("")
       <MenuItem
         onClick={() => {
           navigate("/WishList");
+          handleMenuClose();
         }}
       >
         <StarBorderIcon /> My Reviews
@@ -129,13 +135,19 @@ const [searchTerm, setSearchTerm] = useState("")
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <Box sx={{visibility:"hidden" }}   id="userPage">
-      <IconButton size="small" aria-label="show 4 new mails" color="inherit">
+      <Box sx={{ visibility :"hidden"  }}   id="userPage">
+      <IconButton size="small" aria-label="show 4 new mails" color="inherit"  onClick={() => {
+                    navigate("/WishList");
+                    handleMenuClose()
+                  }}>
           <Badge badgeContent={state.length} color="error">
             <FavoriteBorderIcon />
           </Badge>
         </IconButton>
-        <IconButton
+        <IconButton   onClick={() => {
+                    navigate("/cart");
+                    handleMenuClose()
+                  }}
           size="small"
           aria-label="show 17 new notifications"
           color="inherit"
@@ -154,16 +166,16 @@ const [searchTerm, setSearchTerm] = useState("")
         </IconButton>
       </Box>
       <Box sx={{ p: "5px 30px" }}>
-        <NavLink className="nav" to="/Home">
+        <NavLink className="nav" to="/Home" onClick={handleMenuClose}>
           Home
         </NavLink>
-        <NavLink className="nav" to="/Contact">
+        <NavLink className="nav" to="/Contact" onClick={handleMenuClose}>
           Contact
         </NavLink>
-        <NavLink className="nav" to="/About">
+        <NavLink className="nav" to="/About" onClick={handleMenuClose}>
           About
         </NavLink>
-        <NavLink className="nav" to="/SignUp">
+        <NavLink className="nav" to="/SignUp" onClick={handleMenuClose}>
           SignUp
         </NavLink>
       </Box>
@@ -253,7 +265,7 @@ className="Input" placeholder=" What are you looking for?"  />
 
 
 
-          <Box sx={{visibility:"hidden",display :{xs:"none",md:"flex"} }} id="userPg">
+          <Box sx={{ display: { xs: "none", md: "flex" }, visibility: isUserLoggedIn ? "visible" : "hidden" }} id="userPg">
           <IconButton
               size="large"
               aria-label="show 4 new mails"
@@ -263,6 +275,7 @@ className="Input" placeholder=" What are you looking for?"  />
                 <FavoriteBorderIcon
                   onClick={() => {
                     navigate("/WishList");
+                 
                   }}
                 />
               </Badge>
@@ -276,6 +289,7 @@ className="Input" placeholder=" What are you looking for?"  />
                 <ShoppingCartOutlinedIcon
                   onClick={() => {
                     navigate("/cart");
+                 
                   }}
                 />
               </Badge>
